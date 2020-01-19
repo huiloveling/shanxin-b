@@ -1,0 +1,91 @@
+body{
+    background: #fff;
+}
+button :focus{
+    border: 0;
+}
+.content{
+    width: 100%;
+    background: #FFF;
+}
+.tabWrap{
+    width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px;
+    overflow: hidden;
+    padding: 42px 0;
+}
+.content *{
+    color :#333333;
+}
+.tabList{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+}
+.tabList li{
+    list-style: none;
+    border-bottom: 1px solid #B2B8CB;
+	background:#FFF;
+	text-align:center;
+    height: 50px;
+	z-index:1000;
+    font-size: 16px;
+}
+.tabList li a{
+    padding: 12px 18px;
+    height: 100%;
+    display: inline-block;
+}
+.tabList .active{
+    border-bottom:1px solid #FFF;
+    border-top: 1px solid #B2B8CB;
+    border-left: 1px solid #B2B8CB;
+    border-right: 1px solid #B2B8CB;
+}
+.tabList .active a{
+    border-right: none;
+    cursor: pointer;
+    color: #0B5AA4;
+}
+.tabList li a:last-child{
+    border-right:none;
+}
+.content .tabContent{
+    width: 100%;
+    color: #333333;
+    font-size: 20px;
+    line-height: 35px;
+    background: #FBFBFB;
+    padding: 10px 34px;
+}
+.tab_item{
+    padding-bottom: 26px;
+    padding-top: 24px;
+    border-bottom: 1px dashed #DBE2E8;
+}
+.tab_item:last-child{
+    border-bottom: none;
+}
+.tab_item:last-child{
+    margin-bottom: 0;
+}
+.tab .tab_item .title{
+    font-size: 18px;
+    color:#333;
+}
+.tab .item-content{
+    color: #444444;
+    font-size: 15px;
+    line-height: 22px;
+    text-indent: 20px;
+    margin-top: 8px;
+}
+.target-fix {
+  position: relative;
+  top: -44px; // 偏移值
+  display: block;
+  height: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,76 @@
+@import "~antd/lib/style/themes/default.less";
+@import "./common.less";
+@import "./layout.less";
+.main {
+  width: 368px;
+  margin: 50px auto;
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+  }
+}
+.btn-login{
+  margin-top: 45px;
+}
+.login_item_box{
+    width: 62.5%;
+    margin-bottom: 13px;
+    input{
+        height: 55px;
+        background: none;
+        border: 1px solid #A29F9F !important;
+        border-radius: 0;
+        color: rgb(153, 153, 153);
+    }
+}
+.center{
+    padding-bottom: 90px;
+}
+.content{
+    padding-top: 83px;
+    padding-bottom: 83px;
+}
+.btn_login{
+    width: 62.5% !important;
+    background: #3184C6;
+    margin-top: 45px;
+    height: 55px;
+    box-shadow: 0 0 14px 0 #3184C6;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+.login_options{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 12px auto 0 auto;
+}
+.login_options *{
+  vertical-align: middle;
+}
+
+.register{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.register>a{
+  font-weight: bold;
+  font-size: 16px;
+}

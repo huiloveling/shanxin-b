@@ -1,0 +1,39 @@
+/*设置盒子模型并格式化padding和margin属性 */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor:pointer;
+}
+/*重置placeHolder 的字体颜色*/
+input::-webkit-input-placeholder {
+    color: #A29F9F !important;
+}
+input:-moz-placeholder{
+    color: #A29F9F !important;
+}
+input::-moz-placeholder{
+    color: #A29F9F !important;
+}
+input:-ms-input-placeholder{
+    color: #A29F9F !important;
+}
+
+.container{
+    height: 100vh;
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #999;
+    background: #F7F8FA;
+    overflow: auto;
+}

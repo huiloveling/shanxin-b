@@ -1,0 +1,46 @@
+.content{
+    background: #fff;
+}
+.title{
+    font-size:36px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    padding: 74px 0 74px 0;
+}
+.content .inner-content{
+    width: 1200px;
+    min-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 340px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+.content .item{
+    width: 100%;
+}
+.item .step{
+    text-align: center;
+    flex:1;
+}
+.step img{
+  height: 180px;
+  width: 180px;
+}
+.item2 .step img{
+  height: 150px;
+  width: 150px;
+}
+.item .text {
+    font-size: 20px;
+    color :#414141;
+    margin-top: 13px;
+    line-height: 30px;
+}
+.item2 .text {
+    color :#333;
+    font-size: 22px;
+    line-height: 38px;
+}

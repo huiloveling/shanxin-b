@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录-职钱包</title>
+</head>
+<link rel="stylesheet" href="./static/layout.css">
+<link rel="stylesheet" href="./static/login/common.css">
+<link rel="stylesheet" href="./static/login/login.css">
+<body class="container">
+    <div class="herder">
+        <a class="logo" href="./home.html">
+            <img src="./img/logo.png">
+            &nbsp;
+            <span>人力资源与金融的链接者</span>
+        </a>
+        <span></span>
+    </div>
+    <div class="content">
+        <div class="center">
+            <div class="title">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+            <input class="input-box" type="text" placeholder="请输入您的手机号">
+            <input class='input-box' type="text" placeholder="请输入登录密码">
+            <div class="login-options">
+                <div>
+                    <img id="unselected" src="./img/icon_unselected.png" onclick="selected"/>
+                    <img id="selected" src="./img/icon_selected.png" onclick="unselected" style="display:none;"/>
+                    &nbsp;&nbsp;
+                    <span>记住密码</span>
+                </div>
+                <div>
+                    <a href="./forgetPassword.html" class="reset">忘记密码？</a>
+                </div>
+            </div>
+            <button class="btn btn-login">
+                现在登录
+            </button>
+            <div class="register">
+                <span style="color:#3184C6;">还没有账号？</span><a href="./register.html">现在注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner-content">
+            <p>薪动（青岛）网络科技有限公司</p>
+            <p>鲁ICP备19007302号</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("selected").onclick = function(){
+            document.getElementById("selected").style.display = "none";
+            document.getElementById("unselected").style.display = "inline-block";
+        }
+        document.getElementById("unselected").onclick = function(){
+            console.log(1);
+            document.getElementById("unselected").style.display = "none";
+            document.getElementById("selected").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>
